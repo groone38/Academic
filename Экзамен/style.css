@@ -1,0 +1,530 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: garamond;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-img {
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+
+.header-img:hover {
+    transform: scale(1.2);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1 {
+    margin-left: 30px;
+}
+
+.item-2 {
+    margin-right: 30px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.items {
+    margin: 10px;
+}
+
+.items:hover{
+    font-weight: bold;
+}
+
+.berger {
+    display: none;
+}
+
+/*//////////////////////////////////////// MAIN //////////////////////////////////////////*/
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    height: 600px;
+}
+
+.main-text {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.block-text { 
+    margin: 100px 40px 100px 20px;
+}
+
+.main-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.main-btn:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-weight: bold;
+}
+
+.main-img {
+    margin-left: 30px;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 3s;
+}
+
+.img-main:hover {
+    filter: brightness(60%);
+    transform: scale(1.2);
+}
+
+/*//////////////////////////////////////// MAIN2 //////////////////////////////////////////*/
+
+.main.two {
+    height: 300px;
+}
+
+.main-img.two {
+    margin-left: 0;
+    width: 35%;
+}
+
+.main-text.two {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+/*//////////////////////////////////////// MAIN2 //////////////////////////////////////////*/
+
+.main.three {
+    height: 300px;
+}
+
+.main-img.three {
+    width: 35%;
+}
+
+/*//////////////////////////////////////// GALLERY //////////////////////////////////////////*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 300px;
+}
+
+.gallery-img {
+    display: grid;
+    grid-template-columns: 12% 29% 19% 29% 11%;
+    grid-template-rows: 100%;
+    overflow: hidden;
+}
+
+.pohod {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 3s;
+    /* overflow: hidden; */
+}
+
+.pohod:hover {
+    transform: scale(1.2);
+    filter: brightness(60%);
+}
+
+/*//////////////////////////////////////// CARD //////////////////////////////////////////*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    width: 90%;
+    grid-template-areas: inherit;
+    margin-bottom: 90px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+}
+
+.area {
+    transition: 1s;
+}
+
+.area:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-weight: bold;
+}
+
+.area.one {
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.area.two {
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.area.three {    
+    border-bottom: 1px solid lightgray;
+}
+.area.four {
+    border-right: 1px solid lightgray;
+}
+
+.area.six {
+    border-left: 1px solid lightgray; 
+}
+
+/*//////////////////////////////////////// Form //////////////////////////////////////////*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-text {
+    margin: 0 auto;
+}
+
+.input-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.login-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 35%;
+    margin-right: 13px;
+}
+
+#name {
+    width: 100%;
+    padding: 5px;
+}
+
+.email-item {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 13px;
+}
+
+#email {
+    width: 100%;
+    padding: 5px;
+}
+
+.phone-item {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+#phone {
+    width: 100%;
+    padding: 5px;
+}
+
+.login-item > label {
+    margin-bottom: 10px;
+}
+
+.email-item > label {
+    margin-bottom: 10px;
+}
+
+.phone-item > label {
+    margin-bottom: 10px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#radio {
+    margin-left: 25px;
+}
+
+.sel {
+    display: flex;
+    flex-direction: column;
+}
+
+.lablel-radio {
+    margin-left: 5px;
+}
+
+.sel-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#topic {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.textarea > label {
+    margin-bottom: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.human {
+    display: flex;
+}
+
+.btn-submit {
+    padding: 5px 15px 5px 15px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+hr {
+    margin-bottom: 30px;
+}
+/*//////////////////////////////////////// Footer //////////////////////////////////////////*/
+
+.footer {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.social-item {
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.social-item > a > img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.social-item > a > img:hover {
+    transform: scale(1.2);
+}
+
+/*//////////////////////////////////////////////// Адаптивная вёрстка с помощью медиазапросов ////////////////////////////////////////////////////*/
+
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    .wrapper {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .item-1 {
+        overflow: hidden;
+    }
+
+    .item-2 {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .area.one {
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+    .area.two {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .area.three {
+        border-right: 1px solid lightgray;
+    }
+    .area.four {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .item-2 {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-text {
+        margin: 0;
+    }
+
+    .block-text {
+        margin: 0 0 30px 0;
+    }
+
+    .main-img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main.two {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main.three {
+        height: 100%;
+    }
+
+    .main-img.two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-img.three {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 100%;
+    }
+
+    .area.one {
+        border-right: 0;
+    }
+
+    .area.two {
+        border-right: 0;
+    }
+
+    .area.four {
+        border-right: 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .area.five {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .area.six {
+        border-left: 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .input-item {
+        flex-direction: column;
+    }
+
+    .login-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .email-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .phone-item {
+        width: 100%;
+    }
+}
